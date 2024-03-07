@@ -5,6 +5,10 @@ body {
   font-family:'Poppins', sans-serif;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 
 .calendar-wrapper {
   height: auto;

@@ -198,10 +198,10 @@ export default {
 
 <template>
   <img class="wave" src="../img/cuenta/bg2.png" alt="">
-  <div class="container">
-    <div class="img">
+  <div class="img">
       <img src="../img/cuenta/register.svg" alt="">
     </div>
+  <div class="container">
     <div class="register-container">
       <img class="avatar" src="../img/cuenta/perfil.svg" alt="">
     </div>
@@ -314,27 +314,23 @@ body {
 
 .wave {
   position: absolute;
-  height: 100%;
-  right: 0;
+  top: 0;
+  right: -2px;
   bottom: 0;
   z-index: auto;
-  /* top: 5.5%; */
-  /* Ajusta la posición vertical según tus necesidades */
+  height: 100%;
 }
 
 .img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  z-index: 9999;
 }
 
 .img img {
   position: absolute;
-  top: 300px;
-  left: 0;
-  margin-left: 190%;
-  width: 500px;
+  right: 0;
+  bottom: 0;
 }
 
 .avatar {
@@ -342,22 +338,22 @@ body {
 }
 
 .container {
-  width: 30%;
+  width: 100%;
+  max-width: 900px;
   margin-left: 9%;
-  padding: 18px;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3%;
-  margin-bottom: 4%;
+  margin: 50px 0 50px;
+  padding: 0 100px;
 }
 
 .container .title {
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 36px;
+  margin: 20px 0 30px;
   color: #333;
 }
 
@@ -446,7 +442,7 @@ form .tab .form {
 
 form .btnMover {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 
@@ -489,14 +485,6 @@ form .btnMover button.siguiente {
 }
 
 @media (max-width: 1024px) {
-  .container {
-    width: 30%;
-    margin-left: 3%;
-  }
-
-  .wave {
-    top: 5.2%;
-  }
 
   .img img {
     position: absolute;
@@ -522,13 +510,6 @@ form .btnMover button.siguiente {
 
 @media (max-width: 320px) {
 
-  .container {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 100vh;
-    overflow-y: auto;
-  }
 
   form {
     max-width: 100%;

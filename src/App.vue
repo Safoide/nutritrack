@@ -182,10 +182,15 @@ function useLogout() {
   list-style: none;
 }
 
+main {
+  position: relative;
+}
 
 /*NAVBAR*/
 nav {
   font-size: medium;
+  position: sticky;
+  top: 0;
 }
 
 /*LOGO*/
@@ -241,10 +246,6 @@ nav {
 
 .btnCerrarNoti {
   margin-right: 20px;
-}
-
-.nav-link:hover {
-  border-bottom: 2px solid white;
 }
 
 .btn-logout {
@@ -423,12 +424,11 @@ nav {
   color: #BBBBBB;
   display: block;
   margin-bottom: 15px;
-  transition: all .3 ease;
+  transition: all 0.3s ease 0s;
 }
 
-.footer.links ul li a:hover {
-  color: #ffffff;
-  padding-left: 6px;
+.footer-links ul li:hover a {
+  color: #fff;
 }
 
 .socials-links a {

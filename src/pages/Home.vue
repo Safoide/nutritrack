@@ -65,7 +65,7 @@ export default {
 
       <div class="nosotros-txt">
         <span>Prémium</span>
-        <h2>Obtené beneficios</h2>
+        <h2 class="font-bold">Obtené beneficios</h2>
         <p>NutriTrack Prémium ofrece una experiencia nutricional personalizada y exclusiva. Obtienes acceso a tu nutricionista o deportólogo para recibir orientación experta y planes de comidas adaptados a tus objetivos. Analiza en detalle los nutrientes de tus comidas y disfruta de descuentos exclusivos en alimentos saludables. Con NutriTrack Prémium, estás más cerca de alcanzar tus metas de bienestar y mejorar tus hábitos alimenticios de manera efectiva.</p>
         <a href="#" class="btn-1">Saber más</a>
       </div>
@@ -85,8 +85,8 @@ export default {
               necesarias para mejorar tus hábitos alimenticios y alcanzar tus objetivos nutricionales de manera
               informada. Únete a nosotros y comienza tu viaje hacia una vida más saludable.</p>
           </div>
-          <div class="info-txt">
-            <h2>Más información</h2>
+          <div class="info-txt text-black">
+            <h2 class="font-bold">Más información</h2>
             <p>En NutriTrack, tu seguridad es nuestra prioridad. Aceptamos pagos a través de Mercado Pago, una
               plataforma de pago en línea altamente segura y confiable. Descubre cómo NutriTrack puede transformar tu
               relación con la comida y tu salud, proporcionándote información detallada sobre tu ingesta nutricional,
@@ -273,7 +273,8 @@ export default {
   margin-bottom: 25px;
 }
 
-.nosotros-txt h2 {
+.nosotros-txt h2,
+.info-txt h2 {
   font-size: 45px;
   color: #303030;
   margin-bottom: 30px;
@@ -286,7 +287,7 @@ export default {
 }
 
 .containerPrice {
-  padding: 200px 0px 30px 0px;
+  padding: 200px 0px 100px 0px;
   background-image: url(../img/bg-3.svg);
   background-position: top center;
   background-repeat: no-repeat;
@@ -304,6 +305,7 @@ export default {
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
   margin: 0px 150px 0px 0px;
   color: #0E0E0E;
+  border-radius: 8px;
 }
 
 .info-price h2 {
